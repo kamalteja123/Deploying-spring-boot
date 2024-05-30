@@ -1,8 +1,5 @@
 package com.deploying.demo.Service;
 
-
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +13,7 @@ import java.util.Optional;
 public class CustomerService {
 
     @Autowired
-    private static CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
 
     public List<Customer> getAllCustomers() {
         return customerRepository.findAll();
@@ -26,7 +23,7 @@ public class CustomerService {
         return customerRepository.findById(id);
     }
 
-    public static Customer saveCustomer(Customer customer) {
+    public Customer saveCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
 
@@ -34,4 +31,3 @@ public class CustomerService {
         customerRepository.deleteById(id);
     }
 }
-
