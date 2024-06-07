@@ -17,6 +17,7 @@ services:
     ports:
       - "8090:8090"
     environment:
+      SERVER_PORT: 8090
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/mydatabase
       SPRING_DATASOURCE_USERNAME: user
       SPRING_DATASOURCE_PASSWORD: password

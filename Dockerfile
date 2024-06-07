@@ -11,4 +11,4 @@ COPY target/*.jar app.jar
 EXPOSE 8090
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=${SERVER_PORT}"]
