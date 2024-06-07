@@ -8,7 +8,7 @@ public class MainController {
     @GetMapping("/")
     public String main1()
     {
-        System.out.println("hi bro");
+
         return "Hello World it is working fine";
     }
     @GetMapping("/home")
