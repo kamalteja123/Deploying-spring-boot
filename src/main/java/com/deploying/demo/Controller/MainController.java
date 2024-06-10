@@ -9,11 +9,11 @@ public class MainController {
     public String main1()
     {
 
-        return "Hello  ";
+        return "Hello  fgsfgsdf";
     }
     @GetMapping("/home")
     public String home()
     {
-        return "welcome ";
+        return "welcome fdgsdfgsdfg ";
     }
 }
