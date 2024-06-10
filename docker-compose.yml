@@ -13,6 +13,7 @@ services:
       - db_data:/var/lib/mysql
 
   app:
+    image: spring-boot-img:latest
     ports:
       - "8090:8090"
     environment:
